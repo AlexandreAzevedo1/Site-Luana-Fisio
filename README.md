@@ -30,15 +30,6 @@ Para garantir um visual moderno e código limpo, utilizei:
 - [x] **Área Biográfica:** Espaço dedicado à trajetória profissional.
 - [x] **Call to Action (CTA):** Botões estratégicos para agendamento.
 
----
-
-## 📸 Preview Visual
-
-> [!TIP]
-> **Adicione aqui um GIF ou Print do site funcionando!** > (Dica: Você pode arrastar uma imagem aqui para o editor do GitHub que ele gera o link automático).
-
----
-
 ## 🔧 Como visualizar
 
 1. Faça o clone do repositório:
