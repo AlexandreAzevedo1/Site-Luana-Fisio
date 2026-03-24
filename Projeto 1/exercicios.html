@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Área de Exercícios - LUANAFISIO</title>
+    <meta
+      name="description"
+      content="Área de exercícios da LUANAFISIO - vídeos e orientações personalizadas para pacientes."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-content">
+        <div class="brand">
+          <span class="brand-logo">LF</span>
+          <div class="brand-text">
+            <span class="brand-name">LUANAFISIO</span>
+            <span class="brand-subtitle">Clínica de Fisioterapia</span>
+          </div>
+        </div>
+        <nav class="nav">
+          <a href="index.html#inicio">Início</a>
+          <a href="index.html#servicos">Serviços</a>
+          <a href="index.html#calculadoras">Calculadoras</a>
+          <a href="index.html#contato">Contato</a>
+        </nav>
+        <div class="topbar-actions">
+          <a class="btn-secondary btn-small" href="index.html">
+            Voltar ao site
+          </a>
+          <a class="btn-primary btn-small" id="top-whatsapp" href="#" target="_blank" rel="noopener">
+            Agendar agora
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="exercicios">
+        <div class="container">
+          <h2>Área de Exercícios</h2>
+          <p class="section-subtitle">
+            Espaço reservado para que cada paciente acesse os exercícios e vídeos indicados para o
+            seu tratamento.
+          </p>
+
+          <div class="exercises-layout">
+            <div class="card exercises-login-card">
+              <h3>Acesso do paciente</h3>
+              <p class="exercises-hint">
+                Use o código de acesso que você recebeu na clínica para visualizar seus exercícios
+                personalizados.
+              </p>
+              <form id="exercise-login-form" class="exercises-form">
+                <label>
+                  Nome do paciente
+                  <input type="text" name="patientName" placeholder="Ex: Maria Silva" required />
+                </label>
+                <label>
+                  Código de acesso
+                  <input type="password" name="accessCode" placeholder="Informe o código" required />
+                </label>
+                <button type="submit" class="btn-primary btn-full">
+                  Entrar na área de exercícios
+                </button>
+                <p class="form-note">
+                  Área demonstrativa. No futuro, esta página pode ser integrada a um sistema de
+                  pacientes com login completo.
+                </p>
+              </form>
+            </div>
+
+            <div class="card exercises-content-card">
+              <div id="exercise-locked" class="exercises-locked">
+                <p>
+                  Faça login ao lado para liberar os vídeos e orientações específicas do seu
+                  tratamento.
+                </p>
+              </div>
+              <div id="exercise-area" class="exercises-area hidden">
+                <div class="exercises-header">
+                  <div>
+                    <p class="exercises-patient-label">Paciente</p>
+                    <p id="exercise-patient-name" class="exercises-patient-name"></p>
+                  </div>
+                  <button type="button" id="exercise-logout" class="btn-secondary btn-small">
+                    Sair
+                  </button>
+                </div>
+                <p class="exercises-intro">
+                  Abaixo estão alguns exemplos de vídeos curtos que podem ser utilizados em seu
+                  plano de exercícios. Substitua por vídeos reais conforme sua necessidade clínica.
+                </p>
+                <ul id="exercise-videos" class="exercises-video-list">
+                  <!-- preenchido via JavaScript -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <span>© <span id="year"></span> LUANAFISIO - Clínica de Fisioterapia.</span>
+        <span>Todos os direitos reservados.</span>
+      </div>
+    </footer>
+
+    <a
+      class="floating-whatsapp"
+      id="floating-whatsapp"
+      href="#"
+      target="_blank"
+      rel="noopener"
+      aria-label="Falar com LUANAFISIO pelo WhatsApp"
+    >
+      WHATS
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+

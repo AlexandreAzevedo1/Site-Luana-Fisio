@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LUANAFISIO - Clínica de Fisioterapia</title>
+    <meta
+      name="description"
+      content="LUANAFISIO - Clínica de fisioterapia especializada em reabilitação, pilates, fisioterapia esportiva e atendimento personalizado."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-content">
+        <div class="brand">
+          <span class="brand-logo">LF</span>
+          <div class="brand-text">
+            <span class="brand-name">LUANAFISIO</span>
+            <span class="brand-subtitle">Clínica de Fisioterapia</span>
+          </div>
+        </div>
+        <nav class="nav">
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="calculadoras.html">Calculadoras</a>
+          <a href="#equipe">Equipe</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <div class="topbar-actions">
+          <a class="btn-secondary btn-small" href="exercicios.html">
+            Área de exercícios
+          </a>
+          <a class="btn-primary btn-small" id="top-whatsapp" href="#" target="_blank" rel="noopener">
+            Agendar agora
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-bg-decor"></div>
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <p class="hero-kicker">Bem-vindo(a) à LUANAFISIO</p>
+            <h1>Cuide do seu corpo com fisioterapia humanizada.</h1>
+            <p class="hero-subtitle">
+              Tratamentos personalizados para dor, reabilitação pós-cirúrgica, prevenção de lesões
+              e qualidade de vida, em um ambiente acolhedor e profissional.
+            </p>
+            <div class="hero-actions">
+              <a class="btn-primary" id="hero-whatsapp" href="#" target="_blank" rel="noopener">
+                Agendar avaliação
+              </a>
+              <a class="btn-secondary" href="#servicos">
+                Ver serviços
+              </a>
+            </div>
+            <div class="hero-highlights">
+              <div>
+                <span class="hero-number">1ª</span>
+                <span class="hero-label">Avaliação detalhada</span>
+              </div>
+              <div>
+                <span class="hero-number">+X</span>
+                <span class="hero-label">Pacientes atendidos</span>
+              </div>
+              <div>
+                <span class="hero-number">100%</span>
+                <span class="hero-label">Foco em você</span>
+              </div>
+            </div>
+            <div class="hero-photos">
+              <div class="hero-photo hero-photo-main">
+                <span>Imagem da clínica</span>
+              </div>
+              <div class="hero-photo hero-photo-small">
+                <span>Tratamento</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-inner">
+              <h2>Agende sua avaliação</h2>
+              <p>Envie uma mensagem e retornaremos o mais rápido possível.</p>
+              <form id="contact-form">
+                <label>
+                  Nome
+                  <input type="text" name="name" placeholder="Seu nome completo" required />
+                </label>
+                <label>
+                  Telefone / WhatsApp
+                  <input type="tel" name="phone" placeholder="(00) 00000-0000" required />
+                </label>
+                <label>
+                  Motivo do contato
+                  <select name="reason" required>
+                    <option value="">Selecione</option>
+                    <option value="dor">Dor / Lesão</option>
+                    <option value="pos-operatorio">Pós-operatório</option>
+                    <option value="pilates">Pilates</option>
+                    <option value="avaliacao">Avaliação geral</option>
+                    <option value="outro">Outro</option>
+                  </select>
+                </label>
+                <label>
+                  Mensagem
+                  <textarea
+                    name="message"
+                    rows="3"
+                    placeholder="Conte rapidamente o que está sentindo…"
+                  ></textarea>
+                </label>
+                <button type="submit" class="btn-primary btn-full">
+                  Enviar pelo WhatsApp
+                </button>
+                <p class="form-note">
+                  Não se preocupe, seus dados são usados apenas para entrarmos em contato.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-video">
+        <div class="container">
+          <div class="section-video-header">
+            <h2>Assista e conheça a LUANAFISIO</h2>
+            <p class="section-subtitle">
+              Um pouco do ambiente, dos atendimentos e da forma como cuidamos de você.
+            </p>
+          </div>
+          <div class="video-wrapper">
+            <div class="video-aspect">
+              <video
+                src="video1.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+              >
+                Seu navegador não suporta o elemento de vídeo.
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="sobre">
+        <div class="container section-grid">
+          <div>
+            <h2>Sobre a LUANAFISIO</h2>
+            <p>
+              A <strong>LUANAFISIO</strong> é uma clínica de fisioterapia focada em atendimento
+              acolhedor, humanizado e baseado em evidências científicas. Cada pessoa é única, por
+              isso avaliamos com cuidado sua história, rotina e objetivos.
+            </p>
+            <p>
+              Nosso objetivo é aliviar dores, recuperar movimentos e devolver qualidade de vida,
+              sempre com comunicação clara, exercícios orientados e acompanhamento próximo.
+            </p>
+          </div>
+          <ul class="pill-list">
+            <li>Atendimento individualizado</li>
+            <li>Protocolos atualizados</li>
+            <li>Ambiente confortável</li>
+            <li>Fisioterapia preventiva</li>
+            <li>Reabilitação pós-cirúrgica</li>
+            <li>Orientação para o dia a dia</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section alt" id="servicos">
+        <div class="container">
+          <h2>Serviços</h2>
+          <p class="section-subtitle">
+            Tratamentos pensados para cada fase da sua saúde e recuperação.
+          </p>
+          <div class="cards-grid">
+            <article class="card">
+              <h3>Fisioterapia Ortopédica</h3>
+              <p>
+                Tratamento de dores na coluna, ombros, joelhos e articulações, com foco em recuperar
+                movimentos e prevenir novas lesões.
+              </p>
+              <ul>
+                <li>Dores musculares e articulares</li>
+                <li>Lesões esportivas</li>
+                <li>Alterações de postura</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Reabilitação Pós-Cirúrgica</h3>
+              <p>
+                Acompanhamento seguro após cirurgias ortopédicas, garantindo recuperação gradual,
+                mobilidade e força muscular.
+              </p>
+              <ul>
+                <li>Cirurgias de joelho, ombro, quadril</li>
+                <li>Reforço muscular guiado</li>
+                <li>Retorno às atividades do dia a dia</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Pilates / Exercícios Terapêuticos</h3>
+              <p>
+                Exercícios focados em controle de movimento, fortalecimento e alongamento,
+                contribuindo para postura, equilíbrio e bem-estar.
+              </p>
+              <ul>
+                <li>Pilates solo ou aparelhos</li>
+                <li>Programa individualizado</li>
+                <li>Prevenção de dores crônicas</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="conteudos">
+        <div class="container">
+          <h2>Resultados & Conteúdo</h2>
+          <p class="section-subtitle">
+            Veja exemplos de evolução postural com fisioterapia e acompanhe dicas simples para
+            cuidar do seu corpo no dia a dia.
+          </p>
+
+          <div class="before-after-grid">
+            <article class="card before-after-card">
+              <h3>Antes e depois postural</h3>
+              <p>
+                Com um plano de tratamento consistente, é possível melhorar alinhamento, reduzir dor
+                e ganhar mais consciência corporal.
+              </p>
+              <div class="before-after-photos">
+                <div class="before-photo">
+                  <span>Antes</span>
+                </div>
+                <div class="after-photo">
+                  <span>Depois</span>
+                </div>
+              </div>
+              <p class="before-after-note">
+                Substitua estas imagens por fotos reais de pacientes que autorizaram o uso, sempre
+                respeitando a privacidade.
+              </p>
+            </article>
+
+            <article class="card blog-card">
+              <h3>Blog de dicas</h3>
+              <p class="calculator-text">
+                Textos curtos e práticos para aplicar no dia a dia, mesmo fora da clínica.
+              </p>
+              <ul class="blog-list">
+                <li class="blog-item">
+                  <h4>Como sentar corretamente no home office</h4>
+                  <p>
+                    Altura da cadeira, posição dos pés, apoio lombar e tela na altura dos olhos são
+                    pontos-chave para reduzir dor em pescoço e lombar.
+                  </p>
+                </li>
+                <li class="blog-item">
+                  <h4>Alongamentos rápidos para quem joga FPS</h4>
+                  <p>
+                    Pausas curtas para alongar punhos, ombros e pescoço podem prevenir formigamentos
+                    e tensões em jogadores que passam muitas horas em frente ao computador.
+                  </p>
+                </li>
+                <li class="blog-item">
+                  <h4>Respiração e dor</h4>
+                  <p>
+                    Técnicas simples de respiração podem auxiliar no relaxamento muscular e no
+                    controle da dor em momentos de crise.
+                  </p>
+                </li>
+              </ul>
+              <p class="blog-footer">
+                No futuro, você pode transformar esta área em um blog completo com novos artigos.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="equipe">
+        <div class="container">
+          <h2>Profissional responsável</h2>
+          <div class="profile-card">
+            <div class="profile-avatar">
+              <span>LF</span>
+            </div>
+            <div>
+              <h3>Nome da Fisioterapeuta</h3>
+              <p class="profile-role">Fisioterapeuta | CREFITO 000000-F</p>
+              <p>
+                Especialista em reabilitação ortopédica e atendimento clínico, com experiência em
+                tratamento de dores musculares, lesões esportivas e recuperação pós-operatória.
+              </p>
+              <p class="profile-note">
+                Substitua este texto com sua formação (faculdade, pós-graduação, cursos), tempo de
+                experiência, principais linhas de cuidado e os registros profissionais mais
+                importantes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="depoimentos">
+        <div class="container">
+          <h2>Depoimentos de pacientes</h2>
+          <p class="section-subtitle">
+            A melhor prova do nosso trabalho são as histórias de quem já recuperou movimentos e
+            qualidade de vida.
+          </p>
+          <div class="cards-grid testimonials-grid">
+            <article class="card testimonial-card">
+              <p class="testimonial-text">
+                "Cheguei com muita dor na lombar e dificuldade até para trabalhar sentada. Com o
+                tratamento, exercícios em casa e orientações ergonômicas, hoje consigo trabalhar bem
+                melhor e quase não sinto dor."
+              </p>
+              <div class="testimonial-footer">
+                <div class="testimonial-avatar">A</div>
+                <div>
+                  <p class="testimonial-name">A.P.</p>
+                  <p class="testimonial-meta">Paciente de coluna</p>
+                </div>
+              </div>
+            </article>
+            <article class="card testimonial-card">
+              <p class="testimonial-text">
+                "Lesionei o joelho jogando futebol e achei que ficaria meses parado. O plano de
+                fisioterapia ajudou a recuperar força e confiança para voltar ao esporte."
+              </p>
+              <div class="testimonial-footer">
+                <div class="testimonial-avatar">L</div>
+                <div>
+                  <p class="testimonial-name">L.R.</p>
+                  <p class="testimonial-meta">Paciente pós-lesão esportiva</p>
+                </div>
+              </div>
+            </article>
+            <article class="card testimonial-card">
+              <p class="testimonial-text">
+                "Gostei muito da forma como tudo é explicado. Entender o porquê de cada exercício me
+                deixou mais segura e motivada a seguir o tratamento."
+              </p>
+              <div class="testimonial-footer">
+                <div class="testimonial-avatar">M</div>
+                <div>
+                  <p class="testimonial-name">M.S.</p>
+                  <p class="testimonial-meta">Paciente de dor crônica</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container">
+          <h2>Perguntas frequentes (FAQ)</h2>
+          <p class="section-subtitle">
+            Algumas dúvidas comuns sobre o atendimento em fisioterapia. Em caso de dúvida, entre em
+            contato pelo WhatsApp.
+          </p>
+          <div class="faq-list">
+            <div class="faq-item">
+              <h3 class="faq-question">A fisioterapia dói?</h3>
+              <p class="faq-answer">
+                Em muitos casos, o tratamento é confortável e focado em alívio de dor. Em situações
+                de lesões recentes ou maior sensibilidade, alguns exercícios e manobras podem gerar
+                desconforto leve e controlado, sempre respeitando o seu limite e comunicação com a
+                fisioterapeuta.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h3 class="faq-question">Quantas sessões eu vou precisar?</h3>
+              <p class="faq-answer">
+                O número de sessões varia conforme o tipo de lesão, tempo de dor, rotina e objetivo
+                de cada pessoa. Na avaliação inicial, é feita uma estimativa e, ao longo do
+                tratamento, o plano pode ser ajustado conforme sua evolução.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h3 class="faq-question">Preciso de encaminhamento médico?</h3>
+              <p class="faq-answer">
+                Em muitos casos você pode iniciar a fisioterapia diretamente. Quando necessário,
+                trabalhamos em conjunto com seu médico para um acompanhamento mais completo,
+                principalmente em pós-operatórios e quadros mais complexos.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h3 class="faq-question">Vou receber exercícios para fazer em casa?</h3>
+              <p class="faq-answer">
+                Sim. Sempre que indicado, você recebe orientações e exercícios personalizados para
+                realizar em casa, ajudando a manter os resultados entre as sessões e acelerar sua
+                recuperação.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="contato">
+        <div class="container section-grid">
+          <div>
+            <h2>Contato & Localização</h2>
+            <p class="section-subtitle">
+              Agende sua avaliação ou tire suas dúvidas pelo WhatsApp.
+            </p>
+            <ul class="contact-list">
+              <li>
+                <strong>Telefone / WhatsApp:</strong>
+                <a id="contact-whatsapp" href="#" target="_blank" rel="noopener">
+                  (00) 00000-0000
+                </a>
+              </li>
+              <li>
+                <strong>Endereço:</strong>
+                <span id="clinic-address">
+                  Rua Exemplo, 123 - Bairro, Cidade - UF
+                </span>
+              </li>
+              <li>
+                <strong>Horário de atendimento:</strong>
+                <span>Segunda a Sexta, 8h às 18h</span>
+              </li>
+            </ul>
+            <a class="btn-primary" id="bottom-whatsapp" href="#" target="_blank" rel="noopener">
+              Falar pelo WhatsApp
+            </a>
+          </div>
+          <div class="map-placeholder">
+            <div class="map-embed-wrapper">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3469.236982856809!2d-52.349!3d-31.765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9511b59d5c6c0b2f%3A0x8baf9c6d4ca4e2b7!2sPelotas%2C%20RS!5e0!3m2!1spt-BR!2sbr!4v1700000000000"
+                style="border:0; width: 100%; height: 100%;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <p class="map-note">
+              O ponto no mapa indica a região central de Pelotas. Atualize o endereço na seção ao
+              lado caso a clínica esteja em outro local específico.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <span>© <span id="year"></span> LUANAFISIO - Clínica de Fisioterapia.</span>
+        <span>Todos os direitos reservados.</span>
+      </div>
+    </footer>
+
+    <a class="floating-whatsapp" id="floating-whatsapp" href="#" target="_blank" rel="noopener" aria-label="Falar com LUANAFISIO pelo WhatsApp">
+      WHATS
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>

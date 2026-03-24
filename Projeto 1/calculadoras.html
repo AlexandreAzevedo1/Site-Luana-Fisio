@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculadoras de Saúde - LUANAFISIO</title>
+    <meta
+      name="description"
+      content="Calculadoras de saúde da LUANAFISIO: IMC, ergonomia e ferramentas de bem-estar."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-content">
+        <div class="brand">
+          <span class="brand-logo">LF</span>
+          <div class="brand-text">
+            <span class="brand-name">LUANAFISIO</span>
+            <span class="brand-subtitle">Clínica de Fisioterapia</span>
+          </div>
+        </div>
+        <nav class="nav">
+          <a href="index.html#inicio">Início</a>
+          <a href="index.html#servicos">Serviços</a>
+          <a href="exercicios.html">Área de exercícios</a>
+          <a href="index.html#contato">Contato</a>
+        </nav>
+        <div class="topbar-actions">
+          <a class="btn-secondary btn-small" href="index.html">
+            Voltar ao site
+          </a>
+          <a class="btn-primary btn-small" id="top-whatsapp" href="#" target="_blank" rel="noopener">
+            Agendar agora
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section alt" id="calculadoras">
+        <div class="container calculators">
+          <div>
+            <h2>Calculadoras de Saúde</h2>
+            <p class="section-subtitle">
+              Ferramentas simples para auxiliar na avaliação de saúde e ergonomia no dia a dia. No
+              futuro, você pode adicionar aqui novas calculadoras específicas para seus pacientes.
+            </p>
+
+            <div class="card calculator-card">
+              <h3>Calculadora de IMC</h3>
+              <form id="bmi-form" class="calculator-form">
+                <label>
+                  Peso (kg)
+                  <input type="number" name="weight" step="0.1" min="0" placeholder="Ex: 70" required />
+                </label>
+                <label>
+                  Altura (cm)
+                  <input type="number" name="height" step="0.5" min="0" placeholder="Ex: 165" required />
+                </label>
+                <button type="submit" class="btn-primary btn-full">
+                  Calcular IMC
+                </button>
+              </form>
+              <div id="bmi-result" class="calculator-result">
+                <!-- resultado via JS -->
+              </div>
+            </div>
+          </div>
+
+          <div class="card calculator-card ergonomics-card">
+            <h3>Teste rápido de ergonomia</h3>
+            <p class="calculator-text">
+              Responda a algumas perguntas sobre seu ambiente de trabalho. Este teste não substitui
+              uma avaliação completa, mas ajuda a identificar pontos de atenção.
+            </p>
+            <form id="ergonomics-form" class="calculator-form ergonomics-form">
+              <label>
+                Como você trabalha na maior parte do tempo?
+                <select name="position" required>
+                  <option value="">Selecione</option>
+                  <option value="sentado">Sentado(a) em computador</option>
+                  <option value="em_pe">Em pé / andando</option>
+                  <option value="misto">Misto (sentado e em pé)</option>
+                </select>
+              </label>
+              <label>
+                Você sente dores frequentes em pescoço, ombros ou lombar?
+                <select name="pain" required>
+                  <option value="">Selecione</option>
+                  <option value="nao">Não</option>
+                  <option value="as_vezes">Às vezes</option>
+                  <option value="frequente">Com frequência</option>
+                </select>
+              </label>
+              <label>
+                Sua cadeira possui regulagem de altura e apoio lombar?
+                <select name="chair" required>
+                  <option value="">Selecione</option>
+                  <option value="sim">Sim</option>
+                  <option value="nao">Não</option>
+                  <option value="nao_sei">Não sei</option>
+                </select>
+              </label>
+              <button type="submit" class="btn-secondary btn-full">
+                Ver recomendação
+              </button>
+            </form>
+            <div id="ergonomics-result" class="calculator-result">
+              <!-- resultado via JS -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <span>© <span id="year"></span> LUANAFISIO - Clínica de Fisioterapia.</span>
+        <span>Todos os direitos reservados.</span>
+      </div>
+    </footer>
+
+    <a
+      class="floating-whatsapp"
+      id="floating-whatsapp"
+      href="#"
+      target="_blank"
+      rel="noopener"
+      aria-label="Falar com LUANAFISIO pelo WhatsApp"
+    >
+      WHATS
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
